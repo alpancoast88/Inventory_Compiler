@@ -13,7 +13,7 @@ start <- Sys.time()
 library(tidyverse)
 
 RawData <- read.csv("Plot_Data.csv")
-Overview <- read.csv("Stand_Info.csv")
+StandInfo <- read.csv("Stand_Info.csv")
 SiteIndex <- read.csv("Site_Trees.csv")
 
 #Prepare data - get defects and veg from whole numbers into % 
