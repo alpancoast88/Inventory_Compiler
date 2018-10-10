@@ -13,7 +13,6 @@ start <- Sys.time()
 library(tidyverse)
 
 RawData <- read.csv("Plot_Data.csv")
-StandInfo <- read.csv("Stand_Info.csv")
 SiteIndex <- read.csv("Site_Trees.csv")
 
 #Prepare data - get defects and veg from whole numbers into % 
@@ -33,14 +32,14 @@ RawData$`VEG_pct` <- RawData$`VEG_pct`/100
 
 #how many stands do we have?
 
-nstands <- RawData %>% 
+stands_list <- RawData %>% 
   group_by(STAND_ID)%>%
   count(unique(STAND_ID)) %>% 
   select(STAND_ID)
 
 #Set baseline cruise detials 
 
-n <- as.numeric(nrow(nstands)) # nummber of stands 
+n <- as.numeric(nrow(stands_list)) # nummber of stands 
 RegenEF <- 100 # expansion factor for 1/100th acre fixed plot - regen tally
 SnagEF <- 5 # expansion factor for 1/5th acre fixed plot - snags
 BH_age <- 7 # assumed 7 years to reach breast height - Ponderosa Pine, Ochocco region
@@ -50,7 +49,7 @@ BH_age <- 7 # assumed 7 years to reach breast height - Ponderosa Pine, Ochocco r
 
 PlotSummary <- as.data.frame(matrix(nrow = n ,ncol = 38))
 colnames(PlotSummary)[1] <- "STD"
-PlotSummary$STD <- nstands$STAND_ID
+PlotSummary$STD <- stands_list$STAND_ID
 colnames(PlotSummary)[2] <- "n_Plots"
 colnames(PlotSummary)[3] <- "MerchTC"
 colnames(PlotSummary)[4] <- "MerchSE"
