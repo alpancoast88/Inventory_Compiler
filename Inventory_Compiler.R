@@ -35,7 +35,8 @@ RawData$`VEG_pct` <- RawData$`VEG_pct`/100
 
 nstands <- RawData %>% 
   group_by(STAND_ID)%>%
-  count(unique(STAND_ID)) 
+  count(unique(STAND_ID)) %>% 
+  select(STAND_ID)
 
 #Set baseline cruise detials 
 
