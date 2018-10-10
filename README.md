@@ -5,6 +5,11 @@ This is an early attempt at compiling forest inventory data from plot records to
 
 The population of interest is a large forest tract, stratified into 'stands'. Samples are taken within each strata. Variables of interest are summarized for each strata.  
 
-Standing timber volume estimates are inclulded, however a better approach is implemented in a seperate compliler dealing with volume estimates and merchandising. Results from both compilers are combined to provide complete summary. 
+Merchantable volume and log grade distributions are currently done in seperate script and combined with the inventory attribute table for complete analysis.
 
 Eventually everything will be intergrated into a single tool 
+
+## Note:
+PP Site index is not working. Empty columns in attribute table are currently down outside and need work...
+
+Inventory_Compiler.R reads Plot_Data.csv and Site_Trees.csv and outputs Inventory_Attribute_Table.csv
