@@ -7,4 +7,4 @@ The population of interest is a large forest tract, stratified into 'stands'. Sa
 
 Standing timber volume estimates are inclulded, however a better approach is implemented in a seperate compliler dealing with volume estimates and merchandising. Results from both compilers are combined to provide complete summary. 
 
-Eventually everything will be intergrated into a single tool as a complete package.
+Eventually everything will be intergrated into a single tool 
