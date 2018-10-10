@@ -5,7 +5,8 @@
 # June 2017
 
 # TPA and Basal area by species and DBH class are done by changing code maually for now - automate later if needed
-# Volume is not right - seperate script for volume and merchandising is used and results combined later
+# PP Site index calulation is not working...
+# empty cols still need work
 
 
 start <- Sys.time()
@@ -48,8 +49,8 @@ BH_age <- 7 # assumed 7 years to reach breast height - Ponderosa Pine, Ochocco r
 #create empty summary table with space for all desired variables 
 
 PlotSummary <- as.data.frame(matrix(nrow = n ,ncol = 38))
-colnames(PlotSummary)[1] <- "STD"
-PlotSummary$STD <- stands_list$STAND_ID
+colnames(PlotSummary)[1] <- "STAND_ID"
+PlotSummary$STAND_ID <- stands_list$STAND_ID
 colnames(PlotSummary)[2] <- "n_Plots"
 colnames(PlotSummary)[3] <- "MerchTC"
 colnames(PlotSummary)[4] <- "MerchSE"
