@@ -8,3 +8,5 @@ The population of interest is a large forest tract, stratified into 'stands'. Sa
 Standing timber volume estimates are inclulded, however a better approach is implemented in a seperate compliler dealing with volume estimates and merchandising. Results from both compilers are combined to provide complete summary. 
 
 Eventually everything will be intergrated into a single tool 
+
+PP Site index is not working. Empty col in attribute table are currently down outside and need work...
