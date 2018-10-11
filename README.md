@@ -7,6 +7,8 @@ The population of interest is a large forest tract, stratified into 'stands'. Sa
 
 Merchantable volume and log grade distributions are currently done in seperate script and combined with the inventory attribute table for complete analysis.
 
+Merchantable volume and log grade distribution scripts are not posted yet
+
 Eventually everything will be intergrated into a single tool 
 
 ## Note:
