@@ -67,4 +67,8 @@ error: The following untracked working tree files would be overwritten by checko
 https://stackoverflow.com/questions/4858047/gitignore-and-the-following-untracked-working-tree-files-would-be-overwritten-b
 	
 	
+git pull
+git checkout - B al4Rivers
+git commit -m "make note of what I did"
 git push -u origin al4Rivers	
+
