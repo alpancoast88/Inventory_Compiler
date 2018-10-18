@@ -1,0 +1,70 @@
+
+# to clone and make branch on Git. 
+
+# set current drive 
+cd C:\Users\alpan\Documents\SilviaTerra\
+
+#download clone
+git clone https://github.com/SilviaTerra/aux-stats
+
+#all files were cloned, exept for this error
+		C:\Users\alpan\Documents\SilviaTerra>git clone https://github.com/SilviaTerra/aux-stats
+		Cloning into 'aux-stats'...
+		remote: Enumerating objects: 256, done.
+		remote: Counting objects: 100% (256/256), done.
+		remote: Compressing objects: 100% (176/176), done.
+		remote: Total 40417 (delta 167), reused 160 (delta 80), pack-reused 40161
+		Receiving objects: 100% (40417/40417), 61.96 MiB | 865.00 KiB/s, done.
+		Resolving deltas: 100% (30107/30107), done.
+		error: unable to create file projects/NCAGR/aux.Rmd: No such file or directory
+		error: unable to create file projects/NCAGR/aux.Rnw: No such file or directory
+		error: unable to create file projects/hfm-2015-q1-a1/aux.R: No such file or directory
+		error: unable to create file projects/hfm-2015-q1-a1/aux.Rmd: No such file or directory
+		error: unable to create file projects/hfm-2015-q1-a3/aux.R: No such file or directory
+		error: unable to create file projects/hfm-2015-q1-a3/aux.Rmd: No such file or directory
+		error: unable to create file projects/hfm-2015-q1-g4/aux.R: No such file or directory
+		error: unable to create file projects/hfm-2015-q1-g4/aux.Rmd: No such file or directory
+		error: unable to create file projects/hfm-2015-q4-g1/aux.R: No such file or directory
+		error: unable to create file projects/hfm-cc/aux.R: No such file or directory
+		error: unable to create file projects/hfm-cc/aux.Rmd: No such file or directory
+		Checking out files: 100% (2019/2019), done.
+		fatal: unable to checkout working tree
+		warning: Clone succeeded, but checkout failed.
+		You can inspect what was checked out with 'git status'
+		and retry the checkout with 'git checkout -f HEAD'
+
+# check up to date
+C:\Users\alpan\Documents\SilviaTerra> cd C:\Users\alpan\Documents\SilviaTerra\aux-stats
+C:\Users\alpan\Documents\SilviaTerra\aux-stats>git pull
+Already up to date.
+
+# Checkout does not work...
+git checkout - B al4Rivers
+
+C:\Users\alpan\Documents\SilviaTerra\aux-stats>git checkout -B al4Rivers
+error: The following untracked working tree files would be overwritten by checkout:
+        .gitignore
+        README.md
+        algo2/fia-ormsby-submitted_pr_core_diagnostics.Rmd
+        algo2/pr_core_diagnosticPBTFsubmitted.Rmd
+        algo2/pr_core_diagnosticPvilleEastNonPine.Rmd
+        algo2/pr_core_diagnosticPvilleEastPine.Rmd
+        algo2/pr_core_diagnosticPvilleEastPine_Local.Rmd
+        algo2/pr_core_diagnosticPvilleWestNonPine.Rmd
+        algo2/pr_core_diagnosticPvilleWestPine.Rmd
+        algo2/pr_core_diagnosticSDSsubmitted.Rmd
+        algo2/pr_core_diagnosticWADNRsubmitted.Rmd
+        algo2/tir-flatwoods-bespoke_pr_core_diagnostics.Rmd
+        algo2/tir-flatwoods-default_pr_core_diagnostics.Rmd
+		.
+		.
+		.
+		.
+		#with lots more files in the list
+	projec
+    Aborting
+	
+https://stackoverflow.com/questions/4858047/gitignore-and-the-following-untracked-working-tree-files-would-be-overwritten-b
+	
+	
+git push -u origin al4Rivers	
